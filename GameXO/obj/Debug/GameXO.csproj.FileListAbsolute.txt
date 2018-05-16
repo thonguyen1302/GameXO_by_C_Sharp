@@ -1,0 +1,11 @@
+C:\Users\Tho\Documents\GitHub\GameXO\GameXO\bin\Debug\GameXO.exe.config
+C:\Users\Tho\Documents\GitHub\GameXO\GameXO\bin\Debug\GameXO.exe
+C:\Users\Tho\Documents\GitHub\GameXO\GameXO\bin\Debug\GameXO.pdb
+C:\Users\Tho\Documents\GitHub\GameXO\GameXO\obj\Debug\GameXO.csprojAssemblyReference.cache
+C:\Users\Tho\Documents\GitHub\GameXO\GameXO\obj\Debug\GameXO.Form1.resources
+C:\Users\Tho\Documents\GitHub\GameXO\GameXO\obj\Debug\GameXO.Properties.Resources.resources
+C:\Users\Tho\Documents\GitHub\GameXO\GameXO\obj\Debug\GameXO.csproj.GenerateResource.cache
+C:\Users\Tho\Documents\GitHub\GameXO\GameXO\obj\Debug\GameXO.csproj.CoreCompileInputs.cache
+C:\Users\Tho\Documents\GitHub\GameXO\GameXO\obj\Debug\GameXO.exe
+C:\Users\Tho\Documents\GitHub\GameXO\GameXO\obj\Debug\GameXO.pdb
+C:\Users\Tho\Documents\GitHub\GameXO\GameXO\obj\Debug\GameXO.GameXO.resources
