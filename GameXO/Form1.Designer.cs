@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlChessBoard = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,13 +40,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // pnlChessBoard
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(498, 434);
-            this.panel1.TabIndex = 0;
+            this.pnlChessBoard.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlChessBoard.Location = new System.Drawing.Point(12, 12);
+            this.pnlChessBoard.Name = "pnlChessBoard";
+            this.pnlChessBoard.Size = new System.Drawing.Size(498, 434);
+            this.pnlChessBoard.TabIndex = 0;
             // 
             // panel2
             // 
@@ -115,7 +115,7 @@
             this.ClientSize = new System.Drawing.Size(727, 454);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlChessBoard);
             this.Name = "GameXO";
             this.Text = "Form1";
             this.panel3.ResumeLayout(false);
@@ -127,7 +127,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlChessBoard;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;

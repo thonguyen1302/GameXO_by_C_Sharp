@@ -15,6 +15,25 @@ namespace GameXO
         public GameXO()
         {
             InitializeComponent();
+
+            drawChessBoard();
+        }
+
+        void drawChessBoard()
+        {
+            Button oldButton = new Button();
+            for (int i = 0; i < 10; i++)
+            {
+                Button btn = new Button() {
+                    Width = Cons.CHESS_WIDTH,
+                    Height = Cons.CHESS_HEIGHT,
+                    Location = new Point(oldButton.Location.X + Cons.CHESS_WIDTH, oldButton.Location.Y)
+                };
+
+                pnlChessBoard.Controls.Add(btn);
+
+                oldButton = btn;
+            }
         }
     }
 }
