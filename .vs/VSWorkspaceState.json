@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\GameXO",
+    "\\GameXO\\Resources"
   ],
   "SelectedNode": "\\GameXO_by_C_Sharp.sln",
   "PreviewInSolutionExplorer": false

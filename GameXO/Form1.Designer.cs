@@ -33,19 +33,20 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbMark = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPlayerName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMark)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlChessBoard
             // 
-            this.pnlChessBoard.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlChessBoard.BackColor = System.Drawing.Color.Transparent;
             this.pnlChessBoard.Location = new System.Drawing.Point(12, 12);
             this.pnlChessBoard.Name = "pnlChessBoard";
-            this.pnlChessBoard.Size = new System.Drawing.Size(498, 434);
+            this.pnlChessBoard.Size = new System.Drawing.Size(487, 390);
             this.pnlChessBoard.TabIndex = 0;
             // 
             // panel2
@@ -58,14 +59,15 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.pbMark);
             this.panel3.Controls.Add(this.progressBar1);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtPlayerName);
             this.panel3.Location = new System.Drawing.Point(516, 247);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 199);
+            this.panel3.Size = new System.Drawing.Size(200, 170);
             this.panel3.TabIndex = 2;
             // 
             // button1
@@ -85,14 +87,15 @@
             this.textBox2.TabIndex = 3;
             this.textBox2.Text = "127.0.0.1";
             // 
-            // pictureBox1
+            // pbMark
             // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBox1.Location = new System.Drawing.Point(106, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(91, 84);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pbMark.BackColor = System.Drawing.SystemColors.Control;
+            this.pbMark.Location = new System.Drawing.Point(106, 3);
+            this.pbMark.Name = "pbMark";
+            this.pbMark.Size = new System.Drawing.Size(91, 84);
+            this.pbMark.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbMark.TabIndex = 2;
+            this.pbMark.TabStop = false;
             // 
             // progressBar1
             // 
@@ -101,18 +104,28 @@
             this.progressBar1.Size = new System.Drawing.Size(97, 23);
             this.progressBar1.TabIndex = 1;
             // 
-            // textBox1
+            // txtPlayerName
             // 
-            this.textBox1.Location = new System.Drawing.Point(3, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(97, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtPlayerName.Location = new System.Drawing.Point(3, 3);
+            this.txtPlayerName.Name = "txtPlayerName";
+            this.txtPlayerName.Size = new System.Drawing.Size(97, 20);
+            this.txtPlayerName.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 138);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 13);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "5 in a line to win";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // GameXO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 454);
+            this.ClientSize = new System.Drawing.Size(720, 422);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlChessBoard);
@@ -120,7 +133,7 @@
             this.Text = "Form1";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbMark)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -132,9 +145,10 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbMark;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPlayerName;
+        private System.Windows.Forms.Label label1;
     }
 }
 

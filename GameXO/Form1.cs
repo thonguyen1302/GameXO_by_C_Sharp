@@ -12,28 +12,21 @@ namespace GameXO
 {
     public partial class GameXO : Form
     {
+        #region Properties
+        ChessBoardManager ChessBoard;
+        #endregion
         public GameXO()
         {
             InitializeComponent();
 
-            drawChessBoard();
+            ChessBoard = new ChessBoardManager(pnlChessBoard, txtPlayerName, pbMark);
+
+            ChessBoard.drawChessBoard();
         }
 
-        void drawChessBoard()
+        private void label1_Click(object sender, EventArgs e)
         {
-            Button oldButton = new Button();
-            for (int i = 0; i < 10; i++)
-            {
-                Button btn = new Button() {
-                    Width = Cons.CHESS_WIDTH,
-                    Height = Cons.CHESS_HEIGHT,
-                    Location = new Point(oldButton.Location.X + Cons.CHESS_WIDTH, oldButton.Location.Y)
-                };
 
-                pnlChessBoard.Controls.Add(btn);
-
-                oldButton = btn;
-            }
         }
     }
 }
